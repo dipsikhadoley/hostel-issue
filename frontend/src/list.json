@@ -1,0 +1,39 @@
+[
+    {
+        "hostel":"tilak boys  Hostel ",
+        "identity":"Boys" ,
+        "path":"/tilak" 
+      },
+      {
+        "hostel":"Malvia boys Hostel",
+        "identity":"Boys"  ,
+        "path":"/malvia"  
+      },
+      {
+        "hostel":"Swami vivekanad boys Hostel  ",
+        "identity":"Boys"  ,
+        "path":"/svs" 
+      },
+      {
+        "hostel":"Diamond jublee girls Hostel ",
+        "identity":"girls" ,
+         "path":"djgh"
+      },
+      {
+        "hostel":"Kamla nehru girls hostel ",
+        "identity":"girls" ,
+        "path":"kngh"  
+      },
+      {
+        "hostel":"Sarujani naidu girls hostel ",
+        "identity":"girls" ,
+        "path":"sngh"
+         
+      
+      },
+      {
+        "hostel":"IHB ",
+        "identity":"girls"  
+      }
+
+]
