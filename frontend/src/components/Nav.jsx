@@ -71,6 +71,7 @@ const Nav = () => {
                                             to={item.path}
                                             key={i}
                                             className="block px-4 py-2 hover:bg-gray-100"
+                                            onClick={()=>setIsOpen(false)}
                                         >
                                             <h3 className="text-gray-800">{item.hostel}</h3>
                                             <h4 className="text-gray-600">{item.identity}</h4>

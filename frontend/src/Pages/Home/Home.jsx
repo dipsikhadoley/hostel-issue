@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { RxDotFilled } from 'react-icons/rx';
+import { useNavigate } from 'react-router-dom';
+
 
 const images = [
     {
@@ -18,7 +20,9 @@ const images = [
 ];
 
 const Home = () => {
+    const navigate = useNavigate()
     const [currImag, setCurrImag] = useState(0);
+
 
     const prevImage = () => {
         const isFirstImag = currImag === 0;
@@ -80,21 +84,21 @@ const Home = () => {
                 </ul>
             </div>
             <div className="mt-8 bg-white p-8 rounded-lg shadow-lg">
-                <h2 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-4">Common Issues</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-4">Register a complaint</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="bg-gray-100 p-4 rounded-lg">
+                    <div className="bg-gray-100 p-4 rounded-lg cursor-pointer" onClick={()=>navigate('/complaint')}>
                         <h3 className="text-lg font-bold text-blue-600 mb-2">Electrical Issues</h3>
                         <p className="text-gray-700">Report issues related to fans, lights, and other electrical appliances.</p>
                     </div>
-                    <div className="bg-gray-100 p-4 rounded-lg">
+                    <div className="bg-gray-100 p-4 rounded-lg cursor-pointer" onClick={()=>navigate('/complaint')}>
                         <h3 className="text-lg font-bold text-blue-600 mb-2">Plumbing Issues</h3>
                         <p className="text-gray-700">Report issues related to water supply, drainage, and other plumbing problems.</p>
                     </div>
-                    <div className="bg-gray-100 p-4 rounded-lg">
+                    <div className="bg-gray-100 p-4 rounded-lg cursor-pointer " onClick={()=>navigate('/complaint')}>
                         <h3 className="text-lg font-bold text-blue-600 mb-2">Cleaning Issues</h3>
                         <p className="text-gray-700">Report issues related to cleanliness and sanitation of your hostel area.</p>
                     </div>
-                    <div className="bg-gray-100 p-4 rounded-lg">
+                    <div className="bg-gray-100 p-4 rounded-lg cursor-pointer" onClick={()=>navigate('/complaint')}>
                         <h3 className="text-lg font-bold text-blue-600 mb-2">Furniture Issues</h3>
                         <p className="text-gray-700">Report issues related to damaged or missing furniture in your hostel room.</p>
                     </div>
