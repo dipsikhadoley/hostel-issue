@@ -92,6 +92,19 @@ const Signup = () => {
                         />
                         {errors.password && <span className='text-sm text-red-500'>This field is required</span>}
                     </div>
+                    <div>
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                            Hostel
+                        </label>
+                        <input
+                            id="password"
+                            type="text"
+                            placeholder="Enter your password"
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                            {...register("password", { required: true })}
+                        />
+                        {errors.password && <span className='text-sm text-red-500'>This field is required</span>}
+                    </div>
                     <div className="flex items-center justify-between">
                         <button
                             type="submit"
